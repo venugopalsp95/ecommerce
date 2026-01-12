@@ -10,7 +10,7 @@ import { ProductsProvider } from "./context/ProductContext";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ecommerce">
       <ProductsProvider>
         <CartProvider>
           <div className={` body ${darkMode ? "dark" : "light"}`}>
