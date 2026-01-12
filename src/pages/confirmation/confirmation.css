@@ -1,0 +1,22 @@
+.order-confirm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.order-placer-details {
+  text-align: start;
+}
+.order-placed-items ol li {
+  text-align: start;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 350px) {
+  .order-placed-items ol li {
+    font-size: 1rem;
+  }
+}

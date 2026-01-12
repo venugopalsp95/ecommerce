@@ -1,0 +1,52 @@
+nav {
+  display: flex;
+  width: 100%;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+nav .theme:hover {
+  cursor: pointer;
+}
+nav .logo {
+  font-family: "Fruktur", sans-serif;
+
+  font-size: 2rem;
+}
+nav .option {
+  display: flex;
+  gap: 1.2rem;
+}
+.iconlight {
+  color: white;
+}
+.carticon {
+  position: relative;
+}
+.carticon span {
+  position: absolute;
+  left: 22px;
+  bottom: 15px;
+}
+@media screen and (min-width: 576px) {
+  nav .logo {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav .logo {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  nav .logo {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  nav .logo {
+    font-size: 3.2rem;
+  }
+}
