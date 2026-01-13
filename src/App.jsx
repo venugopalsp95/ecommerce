@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
 import { CartProvider } from "./context/CartContext";
 import { ProductsProvider } from "./context/ProductContext";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -19,6 +20,18 @@ function App() {
           </div>
         </CartProvider>
       </ProductsProvider>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </BrowserRouter>
   );
 }

@@ -3,6 +3,7 @@ import "./productdetails.css";
 import { Link, useParams } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import { ProductsContext } from "../../context/ProductContext";
+import { toast } from "react-toastify";
 
 const ProductDetails = () => {
   const { addToCart } = useContext(CartContext);
@@ -10,6 +11,18 @@ const ProductDetails = () => {
 
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id));
+
+  const showSuccessToast = () => {
+    toast.success("Product added to cart", {
+      position: "top-center",
+      autoClose: 3000,
+    });
+  };
+
+  const handleClick = () => {
+    addToCart(product);
+    showSuccessToast();
+  };
 
   return (
     <>
@@ -31,10 +44,7 @@ const ProductDetails = () => {
 
               <p className="decription">{product.description}</p>
               <p className="price">$ {product.price}</p>
-              <button
-                style={{ width: "100%" }}
-                onClick={() => addToCart(product)}
-              >
+              <button style={{ width: "100%" }} onClick={handleClick}>
                 Add to Cart
               </button>
               <Link to={"/cart"}>

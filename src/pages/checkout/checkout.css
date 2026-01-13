@@ -23,6 +23,7 @@
 .checkout-item .checkout-details form .detail input {
   padding: 0.5rem;
   width: 100%;
+  border-radius: 0.5rem;
 }
 .checkout-item .cart-details {
   width: 100%;
