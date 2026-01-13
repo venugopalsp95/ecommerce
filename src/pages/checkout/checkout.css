@@ -49,7 +49,9 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
+.checkout-item .cart-details .cart-detail-item .cart-item-quantity {
+  white-space: nowrap;
+}
 .checkout-item .cart-details .cart-detail-item .cart-item-price {
   font-weight: bold;
   white-space: nowrap;
