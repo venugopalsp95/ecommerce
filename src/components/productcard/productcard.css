@@ -30,6 +30,8 @@
 }
 .product-card .product-card-details .product-description {
   font-size: 0.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .product-card .product-card-details .product-price {
   display: flex;

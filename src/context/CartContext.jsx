@@ -5,6 +5,7 @@ export const CartContext = createContext({
   increaseQuantity: () => {},
   decreaseQuantity: () => {},
   removeItemFromCart: () => {},
+  clearCart: () => {},
 });
 
 export function CartProvider({ children }) {
@@ -42,6 +43,9 @@ export function CartProvider({ children }) {
     console.log("REMOVE ID", id);
     setCart((prev) => prev?.filter((i) => i.id !== id));
   };
+  const clearCart = () => {
+    setCart([]);
+  };
 
   return (
     <CartContext.Provider
@@ -51,6 +55,7 @@ export function CartProvider({ children }) {
         increaseQuantity,
         decreaseQuantity,
         removeItemFromCart,
+        clearCart,
       }}
     >
       {children}

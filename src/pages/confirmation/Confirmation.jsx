@@ -1,11 +1,12 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CartContext } from "../../context/CartContext";
 import "./confirmation.css";
 import { Link } from "react-router-dom";
 
 const Confirmation = () => {
   const data = JSON.parse(localStorage.getItem("data"));
-  const { cart } = useContext(CartContext);
+  const { cart, clearCart } = useContext(CartContext);
+
   return (
     <div className="order-confirm">
       <h1>Order Placed Successfully</h1>
@@ -35,7 +36,9 @@ const Confirmation = () => {
         </ol>
       </div>
       <Link to={"/"}>
-        <button style={{ marginTop: "1rem" }}>Back to Products</button>
+        <button onClick={() => clearCart()} style={{ marginTop: "1rem" }}>
+          Back to Products
+        </button>
       </Link>
     </div>
   );
