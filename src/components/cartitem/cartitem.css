@@ -10,7 +10,9 @@
   height: 6rem;
 }
 .cart-item .cart-image {
-  width: 2rem;
+  background-color: white;
+  height: 100%;
+  border-radius: 0.5rem;
 }
 .cart-item .cart-item-name {
   font-size: 1rem;
@@ -66,9 +68,6 @@
 }
 
 @media screen and (min-width: 576px) {
-  .cart-item .cart-image {
-    width: 4rem;
-  }
   .cart-item .cart-item-name {
     font-size: 1.2rem;
     font-weight: 600;
@@ -81,9 +80,6 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .cart-item .cart-image {
-    width: 5rem;
-  }
   .cart-item .cart-item-name {
     font-size: 1.4rem;
     font-weight: 600;
@@ -113,9 +109,7 @@
   .cart-item-quantity {
     width: 30px;
   }
-  .cart-item .cart-image {
-    width: 8rem;
-  }
+
   .cart-item .cart-item-name {
     font-size: 2rem;
     font-weight: 600;

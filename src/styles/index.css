@@ -19,7 +19,7 @@
   font-family: "Poppins";
 }
 .dark {
-  background-color: black;
+  background-color: rgb(49, 49, 49);
   color: white;
 }
 .light {

@@ -11,7 +11,11 @@
 }
 
 .product-card .img {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   height: 50%;
 }
 .product-card .img img {
@@ -42,5 +46,5 @@
   font-weight: bold;
 }
 .product-card .product-card-details .product-price .view-details {
-  color: blue;
+  color: #db4444;
 }

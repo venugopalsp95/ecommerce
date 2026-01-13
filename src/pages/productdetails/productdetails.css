@@ -11,6 +11,7 @@
   flex-direction: column;
   gap: 0.6rem;
 }
+
 .product-details .name {
   font-weight: bold;
   font-size: 1.6rem;
