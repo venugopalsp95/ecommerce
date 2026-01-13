@@ -51,6 +51,13 @@ const Home = () => {
         <p style={{ textAlign: "center", fontSize: "2rem" }}>loading....</p>
       ) : (
         <div className="product-item-list">
+          {filteredProducts.length === 0 ? (
+            <p style={{ textAlign: "center", fontSize: "2rem" }}>
+              No such products found
+            </p>
+          ) : (
+            ""
+          )}
           {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
