@@ -74,8 +74,8 @@ const Checkout = () => {
             <div className="cart-detail-item" key={item.id}>
               <img src={item.image} alt="" />
               <p className="cart-item-name">{item.name}</p>
-              <p className="cart-item-quantity">x {item.quantity}</p>
               <p className="cart-item-price">$: {item.price}</p>
+              <p className="cart-item-quantity">x {item.quantity}</p>
             </div>
           ))}
         </div>
