@@ -43,7 +43,9 @@ const Confirmation = () => {
               </li>
             ))}
           </ol>
-          <p className="total-product-price">Total Price: ${total}</p>
+          <p className="total-product-price">
+            Total Price: ${total.toFixed(2)}
+          </p>
         </div>
         <Link to={"/"}>
           <button onClick={() => clearCart()} style={{ marginTop: "1rem" }}>
