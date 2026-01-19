@@ -23,6 +23,8 @@
   padding: 0.5rem;
   width: 100%;
   border-radius: 0.5rem;
+  border: 1px solid #db4444;
+  outline: none;
 }
 .checkout-item .cart-details {
   width: 100%;

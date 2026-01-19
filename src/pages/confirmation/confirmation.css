@@ -46,6 +46,13 @@
   text-overflow: ellipsis;
 }
 
+.total-product-price {
+  text-align: end;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  font-weight: bold;
+}
+
 @media screen and (min-width: 350px) {
   .order-placed-items ol li {
     font-size: 1rem;

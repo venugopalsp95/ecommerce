@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 const Confirmation = () => {
   const data = JSON.parse(localStorage.getItem("data"));
   const { cart, clearCart } = useContext(CartContext);
+  const total =
+    cart?.reduce((sum, item) => sum + item.price * item.quantity, 0) ?? 0;
 
   return (
     <div className="order-confirm">
@@ -34,13 +36,14 @@ const Confirmation = () => {
                 <p>
                   <strong>{item.name}</strong>
                 </p>
-                <p style={{ textAlign: "start" }}>x {item.quantity} </p>
                 <p style={{ textAlign: "end" }}>
                   <strong>${item.price}</strong>
                 </p>
+                <p style={{ textAlign: "start" }}>x {item.quantity} </p>
               </li>
             ))}
           </ol>
+          <p className="total-product-price">Total Price: ${total}</p>
         </div>
         <Link to={"/"}>
           <button onClick={() => clearCart()} style={{ marginTop: "1rem" }}>
