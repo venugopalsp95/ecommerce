@@ -66,7 +66,7 @@ const ProductDetails = () => {
                   <strong>Comment:</strong> {review.comment}
                 </p>
                 <p>
-                  <strong>Date:</strong> {review.date}
+                  <strong>Date:</strong> {review.date.split("T")[0]}
                 </p>
               </div>
             ))}
