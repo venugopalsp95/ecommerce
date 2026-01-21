@@ -58,6 +58,7 @@ A scalable **E-Commerce web application built with React**, implementing product
 
 ## Folder Structure
 
+```text
 src/
 ├── components/
 │ ├── productcard/
@@ -67,10 +68,10 @@ src/
 │ │ ├── Cartitem.jsx
 │ │ └── cartitem.css
 │ ├── navbar/
-│ │ ├── Navbar.jsx  
+│ │ ├── Navbar.jsx
 │ │ └── navbar.css
 ├── context/
-│ ├── CartContext.jsx  
+│ ├── CartContext.jsx
 │ └── ProductContext.jsx
 ├── data/
 │ └── categoryList.js
@@ -82,20 +83,21 @@ src/
 │ │ ├── Checkout.jsx
 │ │ └── checkout.css
 │ ├── confirmation/
-│ │ ├── Confirmation.jsx  
+│ │ ├── Confirmation.jsx
 │ │ └── confirmation.css
 │ ├── home/
-│ │ ├── Home.jsx  
+│ │ ├── Home.jsx
 │ │ └── home.css
 │ ├── productdetails/
-│ │ ├── ProductDetails.jsx  
+│ │ ├── ProductDetails.jsx
 │ │ └── productdetails.css
-├── routes/  
+├── routes/
 │ └── AppRoutes.jsx
 ├── styles/
 │ └── index.css
 ├── App.jsx
 └── main.jsx
+```
 
 ---
 
