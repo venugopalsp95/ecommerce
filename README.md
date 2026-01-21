@@ -16,7 +16,7 @@ A scalable **E-Commerce web application built with React**, implementing product
 
 ### Home page
 
-[Home Page](./src/assets/screenshot)
+[Home Page](./src/assets/screenshot/home.png)
 
 ### Product Details Page
 
@@ -120,11 +120,11 @@ src/
 
 - Implemented **global cart state using React Context API**
 - Centralized cart operations:
-  - 'addToCart
+  - 'addToCart'
   - 'increaseQuantity'
   - 'decreaseQuantity'
-  - 'removeFromCart'
-  - 'clean Cart'
+  - 'removeItemFromCart'
+  - 'clearCart'
 - Prevented state mutation and ensured predictable updates
 
 ---
