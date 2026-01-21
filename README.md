@@ -16,7 +16,7 @@ A scalable **E-Commerce web application built with React**, implementing product
 
 ### Home page
 
-[Home Page](./src/assets/screenshot/home.png)
+[Home Page](./src/assets/screenshot)
 
 ### Product Details Page
 
@@ -59,43 +59,43 @@ A scalable **E-Commerce web application built with React**, implementing product
 ## Folder Structure
 
 src/
-|---components/
-| |---productcard/
-| | |---ProductCard.jsx
-| | |---productcard.css
-| |---cartitem/
-| | |---Cartitem.jsx  
-| | |---cartitem.css
-| |---navbar/  
-| | |---Navbar.jsx  
-| | |---navbar.css
-|---context/
-| |---CartContext.jsx  
-| |---ProductContext.jsx
-|---data/
-| |---categoryList.js
-|---pages/
-| |---cart/
-| | |---Cart.jsx
-| | |---cart.css
-| |---checkout/
-| | |---Checkout.jsx
-| | |---checkout.css
-| |---confirmation/
-| | |---Confirmation.jsx
-| | |---confirmation.css
-| |---home/
-| | |---Home.jsx
-| | |---home.css
-| |---productdetails/
-| | |---ProductDetails.jsx
-| | |---productdetails.css
-|---routes/
-| |---AppRoutes.jsx
-|---styles/
-| |---index.css
-|---App.jsx
-|---main.jsx
+├── components/
+│ ├── productcard/
+│ │ ├──ProductCard.jsx
+│ │ └──productcard.css
+│ ├── cartitem/
+│ │ ├── Cartitem.jsx
+│ │ └── cartitem.css
+│ ├── navbar/
+│ │ ├── Navbar.jsx  
+│ │ └── navbar.css
+├── context/
+│ ├── CartContext.jsx  
+│ └── ProductContext.jsx
+├── data/
+│ └── categoryList.js
+├── pages/
+│ ├── cart/
+│ │ ├──Cart.jsx
+│ │ └──cart.css
+│ ├── checkout/
+│ │ ├── Checkout.jsx
+│ │ └── checkout.css
+│ ├── confirmation/
+│ │ ├── Confirmation.jsx  
+│ │ └── confirmation.css
+│ ├── home/
+│ │ ├── Home.jsx  
+│ │ └── home.css
+│ ├── productdetails/
+│ │ ├── ProductDetails.jsx  
+│ │ └── productdetails.css
+├── routes/  
+│ └── AppRoutes.jsx
+├── styles/
+│ └── index.css
+├── App.jsx
+└── main.jsx
 
 ---
 
